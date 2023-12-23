@@ -15,7 +15,9 @@
     </ul>
 
     <script>
-        var baseURL = "/portfolio/";
+
+        var isDevelopment = false
+        var baseURL = isDevelopment ? "http://127.0.0.1:5500" : '/portfolio';
 
         var clockPageURL = baseURL + "/clock/index-clock.html";
 
