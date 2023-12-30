@@ -16,18 +16,14 @@
 
     <script>
 
-        var isDevelopment = false
-        var baseURL = isDevelopment ? "http://127.0.0.1:5500" : '/portfolio/';
+        var isDevelopment = true
+        var baseURL = isDevelopment ? "http://127.0.0.1:5500/" : '/portfolio/';
 
         var clockPageURL = baseURL + "clock/index-clock.html";
 
-        // Get all <li> elements
         var listItems = document.querySelectorAll("ul li");
-        // Iterate through each <li> element
         listItems.forEach(function (li) {
-            // Find the <a> element inside the current <li>
             var anchorElement = li.querySelector("a");
-            // If an <a> element is found, update its href attribute
             switch (anchorElement.id) {
                 case "clock":
                     document

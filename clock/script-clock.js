@@ -1,4 +1,3 @@
-let hr = document.getElementById('hour');
 let min = document.getElementById('min');
 let sec = document.getElementById('sec');
 
@@ -12,7 +11,8 @@ function displayTime() {
 
     let hRotation = 30 * hh + mm / 2;
     let mRotation = 6 * mm;
-    let sRoation = 6 * ss;
+    let sRoation = 6 * ss;let hr = document.getElementById('hour');
+
 
     hr.style.transform = `rotate(${hRotation}deg)`;
     min.style.transform = `rotate(${mRotation}deg)`;
